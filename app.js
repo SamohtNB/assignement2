@@ -21,7 +21,7 @@ app.all('*', (req, res) => {
     res.status(404).send('404 not found');
 });
 
-app.listen(PORT, () => { console.log(`Server is running on port ${PORT}`) });
+app.listen(PORT, () => { console.log(`Server is running on port ${PORT}, you can access it at http://localhost:${PORT}`)});
 
 function computeValue(input) {
     return input * 2;
